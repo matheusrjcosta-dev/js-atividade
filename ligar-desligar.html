@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Ligar</button>
+    <button id="bt"> Desligar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        const botao = document.getElementById("btn")
+        const botaoo = document.getElementById("bt")
+        const mensagem = document.getElementById("mensagem")
+
+        botao.addEventListener("click", function(){
+            mensagem.textContent = " Sistema ligado"
+        })
+        botaoo.addEventListener("click", function(){
+            mensagem.textContent = "Sistema desligado"
+        })
+
+    </script>
+</body>
+</html>

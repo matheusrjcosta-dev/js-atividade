@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn"> Clique aqui</button>
+    <p id="mensagem"></p>
+
+    <script>
+        let contador = 0 
+        const botao = document.getElementById("btn")
+        const mensagem = document.getElementById("mensagem")
+        
+        botao.addEventListener("click", function(){
+
+            contador = contador + 1
+            if(contador == 1){
+                mensagem.textContent = "Olá"
+            
+            }else if (contador == 2){
+                mensagem.textContent = "Bem-Vindo!";
+                
+            }else{
+                mensagem.textContent = "Você está aprendendo js"
+                contador = 0
+            }
+        
+        })
+        
+
+    
+        
+    </script>
+    
+</body>
+</html>
